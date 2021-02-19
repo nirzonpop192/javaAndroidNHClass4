@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@color/colorBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="18sp" />
+
+        <TextView
+
+            android:id="@+id/tvDisplay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Hello World!"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/Layout">
+
+            <LinearLayout
+                style="@style/Layout.SubLayout">
+
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/Button"
+                    android:text="1" />
+            </LinearLayout>
+
+            <LinearLayout
+               style="@style/Layout.SubLayout">
+
+                <Button
+                    android:id="@+id/btn2"
+                    style="@style/Button"
+                    android:text="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Layout.SubLayout">
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/Button"
+                    android:text="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Layout.SubLayout">
+
+                <Button
+
+                    android:id="@+id/btnMinus"
+                    style="@style/Button.Oprand"
+                    android:text="-" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout">
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/Button"
+                android:text="0" />
+
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/Button"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@style/Button"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="@style/Button.Oprand"
+                android:text="+" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
